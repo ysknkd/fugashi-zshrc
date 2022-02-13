@@ -11,6 +11,6 @@ my .zshrc
 
 ```bash
 git clone https://github.com/ysknkd/fugashi-zshrc ~/.fugashi-zshrc
-ln -s $HOME/.fugashi-zshrc/.zshrv $HOME/.zshrc
+ln -s $HOME/.fugashi-zshrc/.zshrc $HOME/.zshrc
 ```
 
