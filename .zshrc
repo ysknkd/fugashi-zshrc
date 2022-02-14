@@ -1,4 +1,7 @@
-source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
 env=$(uname -a | cut -d' ' -f1,3)
 if [[ $env =~ .*(wsl|WSL).* ]]; then
