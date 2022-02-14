@@ -21,6 +21,9 @@ alias gg="git grep -n"
 alias gd="git diff"
 alias gs="git status"
 
+# 256 color
+export TERM="xterm-256color"
+
 # .local/bin
 export PATH="$PATH:$HOME/.local/bin"
 
