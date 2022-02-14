@@ -3,6 +3,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# open
 env=$(uname -a | cut -d' ' -f1,3)
 if [[ $env =~ .*(wsl|WSL).* ]]; then
   alias open="explorer.exe"
