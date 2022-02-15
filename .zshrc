@@ -16,6 +16,7 @@ alias vim="nvim"
 alias gg="git grep -n"
 alias gd="git diff"
 alias gs="git status"
+alias gc="git checkout"
 
 # .local/bin
 export PATH="$PATH:$HOME/.local/bin"
