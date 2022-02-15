@@ -1,5 +1,9 @@
-source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
+# open
 env=$(uname -a | cut -d' ' -f1,3)
 if [[ $env =~ .*(wsl|WSL).* ]]; then
   alias open="explorer.exe"
@@ -17,6 +21,9 @@ alias gg="git grep -n"
 alias gd="git diff"
 alias gs="git status"
 alias gc="git checkout"
+
+# 256 color
+export TERM="xterm-256color"
 
 # .local/bin
 export PATH="$PATH:$HOME/.local/bin"
