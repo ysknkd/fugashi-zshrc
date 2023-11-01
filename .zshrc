@@ -21,6 +21,7 @@ alias gg="git grep -n"
 alias gd="git diff"
 alias gs="git status"
 alias gc="git checkout"
+alias gcdf="git clean -df"
 
 # 256 color
 export TERM="xterm-256color"
@@ -59,7 +60,13 @@ function _asdf() {
 }
 alias asdf=_asdf
 
+## k8s
+alias k="kubectl"
+
 ## tmux
-if [[ ! -n "$TMUX" ]]; then
-  tmux new-session && exit
-fi
+#if [[ ! -n "$TMUX" ]]; then
+#  tmux new-session && exit
+#fi
+#export PATH="/usr/local/opt/openssl@3/bin:$PATH"
+export PATH="/usr/local/opt/openssl@3/bin:$PATH"
+
